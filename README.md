@@ -1,7 +1,15 @@
 # Transcribe Youtube Videos
 
-You can get this URL by :
-1. go to the youtube vide you want to transcribe
+This python script takes in on argument.
+
+## To get started:
+1. go to file **transcribe.py** and the last line at the bottom where the `get_transcript` function is called.
+2. You will need to update the URL. Instructions on how to get the URL below.
+3. run `python3 transcribe.py`
+4. the script will generate a text file with the results
+
+Get the URL by :
+1. go to the youtube video you want to transcribe
 2. turn on closed captions
 3. go to the developer console in your browser
 4. go to the networks tab
