@@ -1,6 +1,6 @@
 # Transcribe Youtube Videos
 
-This python script takes in on argument.
+This python script will transcribe any youtube video that has closed captioning enabled!
 
 ## To get started:
 1. go to file **transcribe.py** and the last line at the bottom where the `get_transcript` function is called.
