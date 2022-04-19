@@ -1,0 +1,527 @@
+uh  happy  east  denver  i'm  so  excited  to 
+ be  back  this  is  my  fourth  east  denver 
+ total  third  in  person  because  we  weren't 
+ here  last  year  unfortunately  it's  super 
+ great  to  see  the  community  and  we're 
+ gonna  spend  the  next  20  minutes  or  so 
+ going  deep  into  the  world  of  gas  fees 
+ it's  going  to  be  a  bit  of  a  crash  course 
+ i  move  very  very  quickly  to  try  to  cover 
+ as  much  possible  um  but  i'm  here  with 
+ you  for  this  reason 
+ uh  boomers  and  ethereans  alike  like  to 
+ compare  complain  about  gas  prices  right 
+ and  it  never  seems  to  go  away  and  the 
+ question  is  why  because  i  thought  we 
+ were  supposed  to  fix  it  or  it's  going  to 
+ get  fixed  in  the  future  we're  going  to 
+ talk  today  about  how  they  work  and  why 
+ they  work  and  what  we  can  expect  moving 
+ forward  so  we're  going to  talk  about  the 
+ past  present  and  future  of  gas  prices  so 
+ prior  to  eip  1559  the  original  model  was 
+ a  very  simple  first  price  auction 
+ you  set  your  gas  price  the  miners 
+ prioritize  the  highest  fees 
+ there  was  a  fixed  block  size  with  a  15 
+ million  gas  limit  didn't  didn't  change 
+ and  the  miners  received  all  of  the  fees 
+ at  the  end  of  it  super  straightforward 
+ uh  it's  simple  and  you  had  one  variable 
+ to  worry  about 
+ very  easy  everybody  got  it 
+ but  there  was  this  issue 
+ where  trading  bots  and  other  systems 
+ would  often  go  to  war  with  each  other 
+ and  they  would  escalate  the  gas  price  to 
+ win  a  certain  opportunity  and  this  would 
+ bid  up  the  gas  price  of  the  entire 
+ network  these  are  called  priority  gas 
+ auctions  and  you  can  see  one  of  them 
+ this  is  a  representative  one  here  um  if 
+ the  gas  prices  for  the  network  are  low 
+ the  bots  go  to  war  the  pga  happens  it 
+ tabletops  and  then  it  sort  of  declines 
+ and  if  you're  just  a  regular  user  doing 
+ a  regular  thing  on  your  favorite  d5 
+ protocol  or  your  favorite  nft  you 
+ suffered  as  a  result  of  this  so  this  was 
+ the  big  problem  with  this  original  fpa 
+ model  where  it  was  super  difficult  to 
+ figure  out  what  you  needed  to  do  to  get 
+ into  the  next  gas  the  next  block  and  you 
+ had  these  big  surges  okay  and  it  made 
+ the  network  hard  to  use  and  people 
+ complained  about  gas  prices  and  so  as  a 
+ result 
+ a  lot  of  research  went  into  what's  known 
+ as  eip  1559  which  hopefully  all  of  you 
+ are  familiar  with  that  significantly 
+ changed  the  nature  of  the  gas  market  on 
+ ethereum  okay 
+ and  uh  this  was  launched  as  part  of  the 
+ london  hard  fork  in  august  of  2021  we  at 
+ block  native  were  very  involved  in  this 
+ we  were  one  of  the  first  if  not  the 
+ first  to  support  it  at  the  london  hard 
+ fork  and  it  introduced  a  whole  series  of 
+ changes  that  really  really  affects  the 
+ way  that  the  network  works 
+ first  we  now  have  dynamic  block  sizing 
+ so  the  blocks  can  actually  change 
+ dependent  on  demand 
+ there's  three  variables  that  go  into 
+ determining  gas  price  a  base  fee  a 
+ priority  fee  also  called  the  minor  tip 
+ and  what's  known  as  a  max  fee  which  is 
+ super  disorienting  for  users 
+ the  base  fee  is  the  minimum  inclusion 
+ for  the  block  and  is  set  by  the  network 
+ now  this  is  kind  of  a  major  change 
+ because  prior  to  eip  1559  the  network 
+ itself  was  not  aware 
+ of  what  its  gas  fee  was  it  was  totally 
+ set  externally  by  the  miners  and  so  the 
+ network  actually  starts  to  become 
+ self-aware  here  this  is  sort  of 
+ interesting  in  its  implications  also  the 
+ base  fee  must  be  paid  it  doesn't  matter 
+ how  your  transaction  gets  into  the  block 
+ you  could  be  a  miner  and  you  can  shove 
+ it  in  there  through  a  private  network 
+ you  still  got  to  pay  the  base  fee  and 
+ the  base  fee  must  be  paid  in  eth  so  it 
+ also  establishes  eth  as  the  core 
+ currency  of  the  ethereum  network  which 
+ strangely  enough  was  not  necessarily  the 
+ case  up  until  eip  1559.  there's  a  lot 
+ happening  here  the  base  fee  is  then 
+ burned  so  the  network  charges  the  base 
+ fee  and  it  goes  away  which  exerts 
+ deflationary  pressure  on  the  circulation 
+ of  eth  which  should  in  theory  increase 
+ price  as  network  activity  increases  and 
+ then  finally  the  priority  fee  which  is 
+ set  by  the  user  is  paid  to  miners  so  you 
+ have  these  two  variables  base  fee  set  by 
+ the  network  priority  fee  set  by  the  uh 
+ the  user 
+ the  base  fee  gets  burned  the  priority 
+ fee  goes  to  the  miner  got  it  it's  more 
+ complicated  okay 
+ now 
+ uh  we  talked  about  paying  that  the  base 
+ fee  has  an  algorithm 
+ which  is  targeting  50 
+ full  blocks  okay  so  the  variable  block 
+ size  is  0  to  30  million  in  this  model 
+ but  if  a  block  is  100 
+ full 
+ the  base  fee  will  increase  by  the 
+ maximum  in  the  next  block  of  12  and  a 
+ half  percent  so  block  to  block 
+ the  most  that  the  base  fee  can  increase 
+ is  twelve  and  a  half  percent  if  that 
+ blocks  a  hundred  percent  full  it'll  go 
+ up  by  twelve  percent  similarly 
+ the  most  the  base  fee  can  be  reduced  in 
+ between  blocks  is  minus  twelve  and  a 
+ half  percent  but  it  only  does  that  with 
+ a  zero  percent  full  block 
+ empty  blocks  which  are  now  a  thing  with 
+ miners  actually  mine  blocks  that  have  no 
+ transactions  in  them  when  the  base  fee 
+ goes  out  of  control  there's  no  demand 
+ and  the  base  fee  uh  the  base  fee  goes 
+ down  by  twelve  and  a  percent  blocks  are 
+ empty  okay 
+ when  you  set  your  priority  fee  you  will 
+ always  be  charged  that  that  is 
+ guaranteed  to  go  to  the  minor  it's 
+ technically  optional  but  generally  it 
+ needs  to  be  at  least  two  gray 
+ and  you  set  this  max  fee 
+ but  you're  almost  never  charged  the  max 
+ fee  and  this  is  super  disorienting  for 
+ users  because  they  put  this  number  in 
+ that  says  the  maximum  amount  your 
+ transaction  is  going  to  be  charged  but 
+ that's  what  you're  authorizing  it's  sort 
+ of  like  a  credit  limit  in  a  way  and  only 
+ under  very  specific  network  conditions 
+ will  your  max  fee  actually  go  into 
+ effect 
+ however  setting  the  max  fee  incorrectly 
+ can  reduce  transaction  performance  and 
+ predictability  so  this  max  fee  thing  is 
+ a  little  bit  uh  confusing  the  big  risk 
+ is  the  base  fee  is  the  minimum 
+ price  you  set  for  inclusion  in  the  next 
+ block  so  let's  say  the  base  fee  is  50 
+ and  you're  like  great  i'm  going  to  price 
+ my  transaction  at  50  but  before  your 
+ transaction  can  get  included  the  base 
+ fee  rises  to  55. 
+ your  transaction  is  therefore 
+ underpriced  and  is  not  a  candidate  for 
+ inclusion  there's  no  way  your 
+ transaction 
+ can  get  into  a  block  until  the  base  fee 
+ comes  back  down  to  the  50  that  you  set 
+ it  at  so  what  you  want  to  do  is  set  a 
+ max  fee  that  has  a  safety  factor  in  it 
+ that  basically  can  account  for  hey  what 
+ happens  if  the  base  fee  um  goes  up  so 
+ this  whole  thing  about 
+ max  fee  settings  a  little  bit  tricky  in 
+ the  world  of  eip  1559  the  common 
+ heuristic  is  your  max  fee  should  be 
+ twice  your  base  fee  plus  your  priority 
+ fee  with  the  idea  being  if  you  double 
+ the  base  fee  you're  covered  for  the  next 
+ six  blocks 
+ because  at  a  maximum  rate  of  increase 
+ the  base  fee  will  double  in  six  blocks 
+ okay  but  what's  disorienting  for  the 
+ user  is  now  the  transaction  looks  like 
+ it's  going  to  be  super  expensive  and 
+ then  the  transaction  gets  on  channel  we 
+ don't  celebrate  to  say  hey  you  paid  way 
+ less  than  your  max  fee  okay 
+ so  we  work  with  folks  across  the 
+ ecosystem  all  the  time  and  and  it's 
+ interesting  how 
+ persistently  confusion  on  what  the  maxi 
+ actually  represents  when  it  comes  into 
+ play  why  you  want  to  set  it  different 
+ ways  is  actually  part  and  parcel  of 
+ what's  going  on  so  i  really  encourage 
+ everybody  to  get  familiar  with  these 
+ concepts  as  part  of  the  current  network 
+ with  eip1559 
+ so  the  good  news  with  eip1559  is  we  have 
+ variable  block  sizes  so  the  network  can 
+ adapt  it's  much  easier  to  estimate 
+ what's  going  to  happen  because  it's  not 
+ supposed  to  move  around  so  much  and  we 
+ have  this  deflationary  pressure  on  the 
+ network  there  are  other  benefits  to  eip 
+ 1559  transactions  also  called  type  2 
+ one 
+ they  actually  tend  to  cost  less 
+ if  you're  submitting  a  transaction 
+ that's  type  0  the  old  model  on  average 
+ you  pay  about  14  more  okay 
+ now  do  users  care  about  overpaying  for 
+ gas  absolutely  they  do  so  we  highly 
+ encourage  whatever  you're  building  to  be 
+ type  2  or  eip1559  compliant  so  that  your 
+ users  don't  overpay  unnecessarily 
+ two  an  unexpected  side  effect  is  type  2 
+ transactions  tend  to  go  on  chain 
+ slightly  faster  so  by  having  type  2 
+ transactions  they  get  included  slightly 
+ faster  than 
+ type  0  transactions  so  another  benefit 
+ of  being  eip  1559  compliant 
+ now  however  in  the  wild  these  factors 
+ interplay  with  each  other  in  interesting 
+ and  unexpected  ways  and  so  this  is  some 
+ real  world  data  from  an  nft  launch 
+ galaxy  eggs  on  uh  september  14th  of  2021 
+ and  and  here's  what  the  base  feed  did 
+ during  this  galaxy  eggs  nft  launch  so 
+ the  nft  launches  everybody's  super 
+ excited  surge  of  transactions  in  the 
+ network  and  we  can  see  the  base  fee  is 
+ going  up  we  have  full  blocks  at  the  12.5 
+ percent  rate  up  up  up  up up  up  up  up  and 
+ then  it  gets  to  about 
+ 2500  gray  kind  of  tabletops  and  then  it 
+ descends  down  okay  nice  smooth 
+ algorithmic  and  predictable 
+ but  remember 
+ under  eip  1559  there  are  two  factors 
+ which  you  have  to 
+ include  you  have  your  base  fee  and  your 
+ priority  fee  what  was  going  on  with  the 
+ priority  fee 
+ oh 
+ oh  interesting  so 
+ basically  we  saw  this  huge  surge  in  the 
+ minimum  priority  feed  minimum  in  the 
+ block  the  bottom  of  the  block  right 
+ these  big  jumps  that's  2  000  gray 
+ and  the  time  here  is  sort  of  set  to  the 
+ beginning  if  i  overlay  these  two  look  at 
+ this  when  the  base  fee  is  low  the 
+ priority  fee  goes  high 
+ and  as  the  base  fee  increases  the 
+ priority  fee  declines  they  interact  with 
+ each  other  there's  actually  an  algorithm 
+ at  play  here  the  algorithm  of  eip1559 
+ and  there's  the  psychology  of  the  users 
+ who  are  trying  to  participate  in  the  nft 
+ drop  and  these  two  combine  to  look  like 
+ this  this  was  the  actual  network 
+ conditions  during  this  drop 
+ and  if  we  combine  them 
+ what  does  that  look  like  it's  the  exact 
+ same  table  top  we  had  before 
+ rapid  rise  flat  across  the  top  and  a 
+ decline  so  even  under  eip  1559  priority 
+ gas  auctions  are  still  a  thing 
+ they  just  have  more  variables  they're  a 
+ little  less  likely  to  occur 
+ but  we  must  pay  attention  to  what's 
+ going  on  with  the  network  we  must  be 
+ aware  that  there  can  be  sudden  changes 
+ in  the  conditions  to  get  transactions 
+ included  and  that  the  psychology  and 
+ these  algorithms  interact  in  ways  that 
+ are  often  not  obvious  okay  and  this  is 
+ probably  the  most  important  element  that 
+ we  pay  attention  to  when  it  comes  to 
+ predicting  gas  fees  is  it's  pretty  easy 
+ to  predict  the  algorithms  it's 
+ incredibly  hard  to  predict  the 
+ psychology  okay 
+ and  what's  coming 
+ so  there's  some  cons  here  there's  some 
+ changes  coming  with  the  merge  that  we 
+ believe  will  change  some  of  the 
+ psychology  and  this  psychology  changes 
+ will  therefore  have  impacts  on  the  state 
+ of  the  gas  marketplace 
+ so  oh  uh  here's  another  interesting 
+ thing  that  today 
+ even  after  all  this  time  of  eip1559 
+ being  on  mainnet  still  only  75  percent 
+ of  transactions  are  type  2.  so  fully  25 
+ of  transactions  on  ethereum  are 
+ overpaying  by  about  14  on  average 
+ they're  getting  included  slower  the 
+ network  has  to  do  more  work  so  we  still 
+ have  work  to  do  to  drive  adoption  of 
+ type  2  and  make  eip1559 
+ completely  uh  transparent  through  the 
+ whole  network 
+ you  guys  with  me  so  far  i  told  you  this 
+ is  going  to be  a  crash  course  right  so 
+ we  went  through 
+ uh  the  beginning  of  where  we  started 
+ fpas 
+ first  price  auction  and  that  turned  into 
+ pga  priority  gas  auction  we  reboot  the 
+ model  we  moved  to  eip1559 
+ we  now  have  three  variables  at  play  how 
+ those  variables  get  expressed  and  which 
+ actually  get  charged  become  a  lot  less 
+ clear 
+ so  the 
+ eip1559  is  more  efficient 
+ it's  more  predictable  but  it's  harder  to 
+ understand  okay 
+ so  as  we  look  ahead 
+ what's  coming  next  is  the  merge 
+ so  what's  going  to  change  with  gas  fees 
+ during  the  merge 
+ so 
+ estimate  mid  this  year  coming  up  pretty 
+ quick 
+ ethereum  mainnet  will  merge  with  the 
+ beacon  chain 
+ and  you  know  what 
+ almost  nothing  changes 
+ that  we  still  have  dynamic  block  sizing 
+ we  still  have  base  feed  priority  max  fee 
+ but  instead  of  a  minor  tip  it  now 
+ becomes  a  validator  tip  okay 
+ we  still  have  the  base  fee  set  by  the 
+ network  priority  fee  set  by  users  it's 
+ still  burned  and  the  validators  are 
+ going  to  receive  the  priority  fee  now 
+ the  uh  i  won't  go  too  far  into  this  but 
+ the  validator  model  and  the  deflationary 
+ pressure  should  increase 
+ as  a  result  of  the  merge  so  the  good 
+ news  is  once  you  learn  eip1559 
+ you're  gonna  be  well  prepared  for  what's 
+ coming  with  the  merge 
+ however 
+ there's  this  change  and  this  change  is 
+ very  subtle 
+ but  we  think  this  change  is  going  to  be 
+ worth  paying  attention  to  and  it  takes  a 
+ little  explaining  and  this  change  is 
+ known  as  fixed  block  times 
+ so  today  under  the  current  system  proof 
+ of  work 
+ you  have  variable  block  times  the 
+ network 
+ targets  about  13  and  a half  seconds  per 
+ block  on  average  but  we  all  know  a  block 
+ can  be  confirmed  in  one  second  or  60 
+ seconds 
+ that  there's  actually  no  way  to  know 
+ when  the  next  block  is  going  to  be 
+ confirmed  okay  it's  completely 
+ unknowable  and  so  therefore  if  you're 
+ trying  to  get  into  the  next  block 
+ you  don't  know  when  the  block  is  going 
+ to  happen  so  every  millisecond  is 
+ equally  valuable  as  the  next  millisecond 
+ because  everyone's  trying  to  get  on  the 
+ next  block  nobody  knows  when  that  block 
+ is  going  to  get  confirmed 
+ and 
+ everybody  competes  equally  through  a 
+ consistent  time  horizon  okay 
+ that  time  is  basically  flat  and  linear 
+ and  transactions  flowing  into  the 
+ transaction  pool  or  the  mempool  are  can 
+ happen  at  any  time 
+ but  there's  this  subtle  change  which  is 
+ coming  with  the  merge  and  under  proof  of 
+ stake 
+ blocks  will  be  confirmed  every  12 
+ seconds 
+ like  clockwork 
+ and  so  what  does  that  mean 
+ that  means  not  all  milliseconds  are 
+ equal  anymore 
+ because  if  i'm  trying  to  get  something 
+ on  a  ch  on  chain  and  i  want  to  make  sure 
+ i  get  it  and  someone  doesn't  beat  me  to 
+ it 
+ when  am  i  going  to  transmit  my 
+ transaction 
+ and  i'm  going  to  transmit  my  transaction 
+ in  the  first  second 
+ after  the  block  was  confirmed  or  am  i 
+ going  to  wait 
+ to  2nd  11th  maybe 
+ second  11  and  a  half 
+ so  when  i  transmit  the  transaction  all 
+ my  competitors  out  there  have  a  smaller 
+ time  window  to  respond 
+ and  so  what's  significant  here 
+ is  this  will  impact  intra  block 
+ transaction  velocity  okay  today  in  the 
+ current  proof  of  work  model  we  have  a 
+ constant  velocity 
+ all  milliseconds  are  equal  as  we  move  to 
+ proof-of-stake  as  we  move  to  fix  block 
+ times  we  will  have  this  surge  effect 
+ where  the  second  or  two  before  the  block 
+ gets  confirmed  more  transactions  will 
+ flood  into  the  pool  there'll  be  tighter 
+ time  horizons  for  various  automated 
+ systems  to  compete  with  each  other 
+ there'll  be  a  rush  to  lower  and  lower 
+ latency  infrastructure  in  order  to 
+ detect  and  respond 
+ and  we  believe  that  this  will  have 
+ an  impact  on  gas  fees 
+ right 
+ because  the  nature  of  transactions 
+ flowing  in  and  out  will  be  different  but 
+ the  question  is 
+ what  change 
+ what's  going  to  happen  and  the  answer  is 
+ nobody  knows  yet  right  there  are 
+ researchers  who  are  working  on  this  and 
+ what  we're  going  to  have  to  do  is  look 
+ at  this  theory  and  compare  it  to  the 
+ reality  okay  that  what  we  saw  with  the 
+ launch  of  eip1559  was  a  bunch  of  new 
+ behavior  we  hadn't  seen  before  like  the 
+ interaction  and  interplay  between  the 
+ priority  fee  and  the  base  fee  under 
+ periods  of  rapid  congestion  and  i 
+ believe  we  believe  at  block  native  we 
+ will  see  some  similar  new  phenomena  uh 
+ post  merge 
+ that  will  affect  the  entire  network  and 
+ the  nature  of  the  gas  fee  marketplace  so 
+ this  is  super  fun  this  is  super 
+ interesting  and  it  is  super  meaningful 
+ oh  there's  another  thing  looking  past 
+ the  merge  where  we  look  towards  um 
+ sharding  which  will  increase  block  space 
+ and  we  have  a  hint  of  what  might  happen 
+ here  by  looking  at  l2  and  sidechain 
+ smart  contract  transaction  volumes  so 
+ this  chart  real  quick  it  shows  the  blue 
+ is  smart  contract  transactions  and  the 
+ um 
+ orange  is  just  simple  transfer 
+ transactions  on  ethereum  mainnet 
+ this  line  is  the  polygon  side  chain 
+ simple  transactions  just  simple 
+ transfers 
+ and  this  is  polygon  sidechain  smart 
+ contract  transactions  so  where  we  have 
+ polygon  sidechain  where  we  have  more  uh 
+ reduced  gas  fees  where  we  have  more 
+ block  space  theoretically  what  we  see  is 
+ significantly  more  smart  contract 
+ transaction  volume  so  as  we  look  ahead 
+ to  sharding  which  will  be  2023  time 
+ horizon 
+ we  may  see  massive  increases  in  overall 
+ smart  contract  transaction  volume  so 
+ there's  this  thing  that  happens  which  is 
+ look  if  we  just  had  enough  block  space 
+ the  gas  prices  would  go  down  it's  sort 
+ of  like  saying  if  we  just  had  enough 
+ highways  there  would  be  no  traffic  right 
+ it  turns  out  that  as  you  add  highways 
+ you  add  traffic  because  more  people  will 
+ travel  and  so  similarly  as  we  look  to 
+ add  block  space  there's  this  going  to  be 
+ corresponding  increase  in  demand  for 
+ that  block  space  and  this  will  still 
+ matter  so  are  we  going  to  be  talking 
+ about  gas  fees  next  year  probably  are  we 
+ going  to  be  talking  about  gas  fees  after 
+ that 
+ probably  are  we  going  to  be  talking 
+ about  gas  fees  10  years  in  the  future 
+ probably  why  because  block  space  is 
+ valuable 
+ and  so  in  the  past  gas  fees  mattered 
+ in  the  present  right  now  gas  fees  matter 
+ and  in  the  future  gas  fees  are  going  to 
+ matter  so  we  all  have  to  pay  attention 
+ to  that  so  this  meme  isn't  going  to 
+ change  we're  all  going  to  still  be 
+ talking  about  this  and  and  what  we  need 
+ is  continued  research  and  we  invite 
+ people  in  um  we  at  block  native  publish 
+ real-time  data  on  the  state  of  the  gas 
+ marketplace  we  encourage  you  to  check 
+ that  out  and  incorporate  that  find  new 
+ things  look  through  historic  blocks 
+ there's  tons  of  interesting  stuff 
+ happening  here 
+ we  believe  we  can  improve  the  user 
+ experience  so  users  have  a  better  idea 
+ of  what  they  can  expect  for  what  their 
+ transactions  are  going  to  cost  where 
+ they  should  put  transactions  on  a  side 
+ chain  or  l2  to  have  less  and and  what 
+ the  outcomes  are  going  to  be  and  that 
+ fundamentally  with  more  capable 
+ infrastructure  we  can  improve  the 
+ transaction  experience  across  the  board 
+ and  as  we  do  so  we're  here  to  help  check 
+ out  our  gas  estimator  check  out  our  gas 
+ api  we're  block  data.com  and  this  has 
+ been  super  fun  i'm  matt  cutler  really 
+ appreciate  your  time  and  attention  and 
+ please  have  a  great  rest  of  east  denver 
+ okay  thanks  everybody 
+ [Applause] 
+ that  was  amazing  thank  you  thank  you 
+ thank  you
